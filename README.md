@@ -1,17 +1,24 @@
-# Physics-Informed Machine Learning
-This repository will host the tutorials created by the participants of the `Physics-Informed Machine Learning` seminar. 
+# PDE Learning with Diffusion Models
 
-## Short description
-In this seminar, we will explore influential papers in the field of physics-informed machine learning. This includes well-established concepts such as Gaussian process-based PDE solvers, Neural ODEs, and Neural Operators, as well as more recent advancements like hybrid models and foundational models for PDE solving. The goal is for you to prepare a self-contained tutorial based on a selected paper, which you will present in a block seminar at the end of the semester. Through these presentations and tutorials, we will discuss how physical knowledge can be encoded into machine learning models and examine the current limitations of these methods.
+This project explores how **diffusion models** can be applied to learn and solve **partial differential equations (PDEs)**. The approach integrates ideas from **physics-informed machine learning** to bridge the gap between data-driven methods and physical modeling.
 
-The full description can be found here: (https://www.mlsustainableenergy.com/teaching/physics-informed-machine-learning/).
+## Interactive Notebook
 
-## Topics
-We are looking forward to the following topics:
-- Probablistic Numerical Method of Lines
-- SINDy
-- Hamiltonian and Lagrangian Neural Networks
-- Mesh-Based Simulation with Graph Neural Networks
-- PDE Learning with Diffusion Models
-- Continuous PDE Dynamics Forecasting with Implicit Neural Representations
-- Probabilistic ODE Solvers
+You can open and run the interactive notebook directly in Google Colab:
+
+👉 [**Open in Google Colab**](https://colab.research.google.com/drive/1IYspKoVMxzMPWzR1IsQDLeR-xNyJg7IL?usp=sharing)
+
+The notebook walks through:
+- Understanding the math behind score matching models and sampling them
+- Introduction to guided diffusion
+- Training and interactive inference examples
+- DiffusionPDE walk-through and results
+- Analysis of DiffusionPDE failure modes
+
+## Key Concepts
+
+- **Diffusion Models:** Probabilistic generative models that iteratively refine noisy data samples into structured outputs.  
+- **Physics-Informed Learning:** Embedding PDE constraints directly into the training process to ensure physically consistent predictions.  
+- **Applications:** Modeling dynamical systems, simulating fluid flow, and learning PDE operators from data.
+
+This project was developed as a presentation for the Physics Informed Machine Learning (Winter 2025) seminar. You can view the full class GitHub with the other seminar notebooks [**here**](https://github.com/ClimatePDE/physics-informed-machine-learning).
